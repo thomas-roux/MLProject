@@ -105,7 +105,7 @@
         // code to connect to the <input> given value
             const userInput = document.getElementById('userInput').value
             //Model returns value > 0 for windspeeds of 0; auto-correct
-            if (userInput == 0) {
+            if (userInput <= 0) {
                 resultsToTable(0);
             } else {
                 //convert userInput to tensot
