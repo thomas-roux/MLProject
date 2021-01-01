@@ -5,7 +5,7 @@ app = Flask(__name__, static_url_path='', static_folder='staticpages')
 
 #Direct to root
 @app.route('/')
-def index():
+def home():
     return app.send_static_file('index.html')
 
 #Runs programe when called
