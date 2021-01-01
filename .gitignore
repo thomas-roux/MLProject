@@ -1,6 +1,6 @@
 # Additional files specific to this project
 venv/
-/modeltest.py
+modeltest.py
 
 # Standard files as part of .gitignore
 # Byte-compiled / optimized / DLL files
