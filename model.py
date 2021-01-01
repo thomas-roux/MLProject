@@ -11,7 +11,7 @@ import pandas as pd
 # Read in data file into pandas dataframe
 df = pd.read_csv("powerproduction.csv")
 
-#Remove power of zero where windspeed is above 10
+#Remove power of zero where windspeed is above 10 (non-sensical data points)
 df = df.drop(df[(df.speed > 10) & (df.power == 0)].index)
 
 # Create training set - in this case, use whole dataset
