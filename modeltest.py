@@ -21,5 +21,6 @@ model.compile(kr.optimizers.Adam(lr=0.001), loss='mean_squared_error')
 
 model.fit(train['speed'], train['power'], epochs=500, batch_size=10)
 
-model.save("model.h5")
-#print(model.predict([15]))
+while True:
+    n = float(input("number"))
+    print(model.predict([n]))
